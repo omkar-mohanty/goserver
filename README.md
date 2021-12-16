@@ -23,7 +23,7 @@ This project was built by a student attempting to understand basic networking co
 
 ## Tech
 
-Dillinger uses a number of open source projects to work properly:
+Go Server uses a number of open source projects to work properly:
 
 
 - [Cobra ](https://github.com/spf13/cobra) - A CLI library
