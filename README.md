@@ -1,7 +1,7 @@
 # Go Server
 ## _A genral purpose server built using golang_
 
-
+[![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg) [![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/gomods/athens.svg)](https://github.com/gomods/athens)
 
 Go Server is a genral purpose server meant to be simple to use and begginner friendly.
 
