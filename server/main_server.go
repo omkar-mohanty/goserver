@@ -21,12 +21,12 @@ func handleConn(conn net.Conn) {
 	for {
 
 		n, err := conn.Read(buf[:])
-		if err != nil {
+		if err == nil {
 			s := fmt.Sprintf("[*]Read message from:%s , message:%s",
 				conn.RemoteAddr().String(),
-				buf[:0])
+				buf[0:n])
 			admin.Log(s)
-			go writeToAllConn(buf[:n])
+			go writeToAllConn(buf[0:n])
 		}
 	}
 }
@@ -39,7 +39,7 @@ func acceptConns(listner *net.TCPListener) {
 	for {
 		conn, err := listner.Accept()
 		tcpConnections = append(tcpConnections, conn)
-		if err != nil {
+		if err == nil {
 			s := fmt.Sprintf("[+]New Connection:%s ",
 				conn.RemoteAddr().String())
 			admin.Log(s)
