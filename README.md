@@ -2,7 +2,7 @@
 ## _A genral purpose server built using golang_
 
 
-[![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
+
 Go Server is a genral purpose server meant to be simple to use and begginner friendly.
 
 Currently the project supports only tcp connections but support for more is to come!
