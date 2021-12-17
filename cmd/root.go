@@ -28,7 +28,6 @@ to quickly create a Cobra application.`,
 		port := args[0]
 		var wg sync.WaitGroup
 		wg.Add(1)
-		go server.StartAdmin()
 		go server.StartServer(port)
 		wg.Wait()
 	},
