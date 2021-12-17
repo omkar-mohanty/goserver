@@ -2,6 +2,7 @@ package admin
 
 import (
 	"fmt"
+	"io/ioutil"
 	"log"
 	"os"
 	"sync"
@@ -31,11 +32,10 @@ func startCli() string {
 	return s
 }
 func readLogs() {
-	var buf []byte
-	n, err := file.Read(buf)
-	fmt.Println("[*]Total log size: ", n)
+	buf, err := ioutil.ReadFile("logs")
+	fmt.Println("[*]Total log size: ", len(buf))
 	checkError(err)
-	fmt.Print(string(buf[0:n]))
+	fmt.Printf("Data\n %s\n", buf)
 }
 func Log(entry string) {
 	lock.Lock()
