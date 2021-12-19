@@ -23,9 +23,8 @@ examples and usage of using your application. For example:
 Cobra is a CLI library for Go that empowers applications.
 This application is a tool to generate the needed files
 to quickly create a Cobra application.`,
-	Args: cobra.MinimumNArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		port := args[0]
+		port := os.Getenv("PORT")
 		var wg sync.WaitGroup
 		wg.Add(1)
 		go server.StartServer(port)
