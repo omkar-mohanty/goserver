@@ -3,7 +3,7 @@
 
 [![GitHub license](https://img.shields.io/github/license/Naereen/StrapDown.js.svg)](https://github.com/Naereen/StrapDown.js/blob/master/LICENSE)    [![made-with-Go](https://img.shields.io/badge/Made%20with-Go-1f425f.svg)](http://golang.org)    [![Windows](https://svgshare.com/i/ZhY.svg)](https://svgshare.com/i/ZhY.svg)     [![GitHub go.mod Go version of a Go module](https://img.shields.io/github/go-mod/go-version/gomods/athens.svg)](https://github.com/gomods/athens)
 
-Go Server is a genral purpose server meant to be simple to use and begginner friendly.
+Go Server is a genral purpose server meant to be simple to use and beginner friendly.
 
 Currently the project supports only tcp connections but support for more is to come!
 
