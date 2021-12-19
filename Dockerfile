@@ -5,5 +5,5 @@ COPY .. ./
 RUN go get -d ./...
 RUN go mod tidy
 RUN go build -o /docker-go-server
-EXPOSE 1200
-CMD ["/docker-go-server","1200"]
+EXPOSE $PORT
+CMD ["/docker-go-server","$PORT"]
